@@ -21,7 +21,6 @@ export default createGlobalStyle`
   h2 {
     font-weight: 600;
     font-size: 15px;
-    padding-top: 10px;
   }
   *, button, input {
     border: 0;
