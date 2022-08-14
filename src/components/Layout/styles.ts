@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Modal } from "antd";
 
 export const Container = styled.div`
   height: 100vh;
@@ -12,6 +13,7 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
   display: flex;
+  border: 1px solid red;
 `;
 
 export const Sider = styled.div`
@@ -44,21 +46,21 @@ export const Sider = styled.div`
     margin-bottom: 12px;
   }
 `;
-export const Modal = styled.div`
-  modal-resumo {
+export const ModalContainer = styled(Modal)`
+  .modal-resumo {
     border: 1px solid blue;
   }
-`;
-
-export const Checkout = styled.div`
-  width: 100%;
-  border: 1px solid red;
 
   .chekout-title {
     display: flex;
     gap: 100px;
     border: 1px solid #000;
   }
+`;
+
+export const Checkout = styled.div`
+  width: 100%;
+  border: 1px solid red;
 
   .checkout-modal {
     display: flex;
