@@ -10,9 +10,8 @@ const Input = () => {
 
   return (
     <Container>
+      <FaSistrix />
 
-      <FaSistrix/>
-      
       <input
         type="text"
         placeholder="Buscar"

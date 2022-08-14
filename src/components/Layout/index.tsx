@@ -80,14 +80,24 @@ const LayoutCompeent: React.FC = () => {
               return (
                 <>
                   <Checkout>
-                    <div>{item.title}</div>
-                    <div>{item.money}</div>
+                    <div className="chekout-title">
+                      <h2>Nome do produto</h2>
+                      <h2>Valor</h2>
+                      <h2>Quantidade</h2>
+                    </div>
+
+                    <div className="checkout-modal">
+                      <div>{item.title}</div>
+                      <div>{item.money}</div>
+                    </div>
                   </Checkout>
                 </>
               );
+              <div className="modal-resumo">
+                <div>R${total}</div>
+                <div>R${total + 10}</div>
+              </div>;
             })}
-            <div>R${total}</div>
-            <div>R${total + 10}</div>
           </Modal>
 
           <Sider>

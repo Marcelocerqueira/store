@@ -44,7 +44,25 @@ export const Sider = styled.div`
     margin-bottom: 12px;
   }
 `;
+export const Modal = styled.div`
+  modal-resumo {
+    border: 1px solid blue;
+  }
+`;
 
 export const Checkout = styled.div`
+  width: 100%;
   border: 1px solid red;
+
+  .chekout-title {
+    display: flex;
+    gap: 100px;
+    border: 1px solid #000;
+  }
+
+  .checkout-modal {
+    display: flex;
+    gap: 200px;
+    border: 1px solid #000;
+  }
 `;
