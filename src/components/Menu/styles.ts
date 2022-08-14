@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 100%;
+  width: 113%;
   height: 60px;
   margin-top: 3px;
   background: #00bfff;
@@ -10,19 +10,26 @@ export const Container = styled.div`
   align-items: center;
 
   .cart-item {
+    width: 16px;
+    height: 17px;
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: center;
     border-radius: 50%;
-    position: relative;
-    padding: 1px;
+    /* position: relative; */
+    /* padding: 1px; */
     background: yellow;
-    font-size: large;
+    /* font-size: 10px; */
+    position: absolute;
+    top: 4px;
+    /* z-index: 10px; */
+    right: 55px;
   }
 
   svg {
     font-size: 29px;
     color: white;
+    margin-right: 60px;
   }
 
   h1 {

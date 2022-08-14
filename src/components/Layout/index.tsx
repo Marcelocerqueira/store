@@ -93,19 +93,37 @@ const LayoutCompeent: React.FC = () => {
           <Sider>
             <div>
               <h1>Filtrar</h1>
-              <h2>Preço de</h2>
+              <h2>
+                Preço <hr /> de
+              </h2>
             </div>
-            <Input />
+            <input type="text" value="R$ 0,00" />
             <div>
-              <h2>De</h2>
+              <h2>Até</h2>
             </div>
-            <Input />
-            <Select />
-            <input />
+            <input type="text" value="R$ 0,00" />
+            <div>
+              <h1>Ordenar</h1>
+              <h4>Preço</h4>
+            </div>
+
+            <select>
+              <option value="item1">Menor preço </option>
+              <option value="item1">Maior preço </option>
+            </select>
+
+            <div>
+              <h4>Data de inclusão</h4>
+            </div>
+
+            <select>
+              <option value="item1">Mais recente</option>
+              <option value="item1">Menos recente </option>
+            </select>
           </Sider>
           <div
             style={{
-              padding: 20,
+              padding: 10,
             }}
           >
             <Input />
@@ -113,10 +131,7 @@ const LayoutCompeent: React.FC = () => {
             <CardImagem setIsModalVisible={setIsModalVisible} />
           </div>
         </Content>
-
-        {/* <CardImagem /> */}
       </Wrapper>
-      {/* <Footer/> */}
     </Container>
   );
 };

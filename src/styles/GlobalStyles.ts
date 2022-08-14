@@ -10,9 +10,19 @@ export default createGlobalStyle`
     min-height: 100%;
     background: var(--color-primary);
   }
-  /* h1, h2, h3, h4, h5, h6 {
+  h1,h4 {
     font-weight: 600;
-  } */
+    font-size: 20px;
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 15px;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 15px;
+    padding-top: 10px;
+  }
   *, button, input {
     border: 0;
     background: none;
