@@ -32,7 +32,7 @@ Depois que o merge da sua pull request for feito, você pode deletar a sua branc
 ---
 
 <p align="center">
-   <img src="/store.png" >
+   <img src="/stores.png" >
 </p>
 
 Make with ♥ by Marcelo Cerqueira :wave:
