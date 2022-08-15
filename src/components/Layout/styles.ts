@@ -50,12 +50,30 @@ export const ModalContainer = styled(Modal)`
   .modal-resumo {
     border: 1px solid #ccc;
     width: 300px;
-    height: 240px;
+    height: 260px;
     margin-left: 10px;
     border-radius: 6px;
-    background: #ccc;
-    padding: 10px;
+    background: #efefef;
+    padding: 20px;
 
+    .produto {
+      display: flex;
+      justify-content: space-between;
+    }
+    .fret {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .total {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    hr {
+      width: 100%;
+      border: 1px solid #ccc;
+    }
     button {
       width: 100%;
       background: #00bfff;
@@ -63,7 +81,7 @@ export const ModalContainer = styled(Modal)`
       border-radius: 5px;
       font-size: 20px;
       display: flex;
-      margin-top: 49px;
+      margin-top: 9px;
       justify-content: center;
     }
   }

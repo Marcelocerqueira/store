@@ -17,19 +17,19 @@ const CardImagem: React.FC<Props> = (props) => {
     {
       id: 1,
       title: "Computador",
-      money: 30,
+      money: 3000,
       url: "http://heitec.com.br/wp-content/uploads/2016/09/HPp62005UK2._V165305585_-1170x570.jpg",
     },
     {
       id: 2,
       title: "Livros",
-      money: 10,
+      money: 100,
       url: "https://portalvidalivre.com/uploads/content/image/88478/Design_sem_nome__1___1_.jpg",
     },
     {
       id: 3,
       title: "Computador",
-      money: 15,
+      money: 1500,
       url: "http://heitec.com.br/wp-content/uploads/2016/09/HPp62005UK2._V165305585_-1170x570.jpg",
     },
 

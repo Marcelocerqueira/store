@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import Product from "../Product";
 import HeaderMenu from "../Menu";
 import Input from "../Input";
 import CardImagem from "../CardImagem";
@@ -95,11 +94,20 @@ const LayoutCompeent: React.FC = () => {
                 })}
               </div>
               <div className="modal-resumo">
-                <div>Resumo</div>
-                <div>R${total}</div>
+                <div>
+                  <h1>Resumo</h1>
+                </div>
+                <div className="produto">
+                  <h3>Produto</h3> R${total}
+                </div>
+                <div className="fret">
+                  <h3>Frete</h3> R${10}
+                </div>
                 <div>Descontos</div>
-                <div>Frete</div>
-                <div>R${total + 10}</div>
+                <hr />
+                <div className="total">
+                  <h1>Total</h1> R${total + 10}
+                </div>
                 <button>Finaliza Compra</button>
               </div>
             </div>
