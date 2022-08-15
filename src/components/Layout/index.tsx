@@ -59,8 +59,10 @@ const LayoutCompeent: React.FC = () => {
             visible={isModalVisible}
             onOk={handleOk}
             onCancel={handleCancel}
+            width={1200}
           >
             <div className="chekout-title">
+              <h2>imagem</h2>
               <h2>Nome do produto</h2>
               <h2>Valor</h2>
               <h2>Quantidade</h2>
@@ -72,21 +74,28 @@ const LayoutCompeent: React.FC = () => {
                 <>
                   <Checkout>
                     <div className="checkout-modal">
-                      <div>{item.title}</div>
-                      <div>{item.money}</div>
                       <div>
                         <img src={item.url} alt="" />
                       </div>
+                      <div>{item.title}</div>
+                      <div>{item.money}</div>
+                      <div className="btn">
+                        {/* <button>+</button> */}
+                        - <input type="text" />+{/* <button>-</button> */}
+                      </div>
                     </div>
                   </Checkout>
+                  <div className="modal-resumo">
+                    <div>Resumo</div>
+                    <div>R${total}</div>
+                    <div>Descontos</div>
+                    <div>Frete</div>
+                    <div>R${total + 10}</div>
+                    <button>Finaliza Compra</button>
+                  </div>
                 </>
               );
             })}
-            <div className="modal-resumo">
-              <div>R${total}</div>
-              <div>R${total + 10}</div>
-            </div>
-            ;
           </ModalContainer>
 
           <Sider>

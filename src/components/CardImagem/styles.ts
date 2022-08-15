@@ -9,11 +9,10 @@ export const Container = styled.div`
     box-shadow: 0 2px 10px gray;
     border-radius: 10px;
     padding: 10px;
-
-    /* box-shadow: 0 0.1px 1em; */
-    /* overflow: hidden; */
-    /* background: #fffaf0; */
-    /* border: 6px solid #00ff00; */
+    img {
+      width: 300px;
+      height: 300px;
+    }
   }
 
   h2 {

@@ -48,11 +48,26 @@ export const Sider = styled.div`
 `;
 export const ModalContainer = styled(Modal)`
   .modal-resumo {
-    border: 1px solid blue;
+    border: 1px solid #ccc;
+    width: 200px;
+    height: 200px;
+    border-radius: 6px;
+    background: #ccc;
+
+    button {
+      width: 100%;
+      background: #00bfff;
+      color: white;
+      border-radius: 5px;
+      font-size: 15px;
+      display: flex;
+      justify-content: center;
+    }
   }
 
   .chekout-title {
     display: flex;
+    justify-content: space-around;
     gap: 100px;
     border: 1px solid #000;
   }
@@ -60,11 +75,43 @@ export const ModalContainer = styled(Modal)`
 
 export const Checkout = styled.div`
   width: 100%;
-  border: 1px solid red;
+  box-shadow: 0 2px 10px gray;
+  border-radius: 10px;
+  padding: 14px;
+  margin-top: 20px;
+  align-items: center;
+  img {
+    width: 50px;
+    height: 50px;
+  }
 
   .checkout-modal {
     display: flex;
+    justify-content: space-around;
+
     gap: 200px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
+
+    .btn {
+      /* width: 30px; */
+      /*  */
+      background: white;
+      color: #00bfff;
+      /* border-radius: 5px; */
+      font-size: 35px;
+      gap: 10px;
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      /* border: 1px solid #ccc; */
+      /* border: none; */
+
+      input {
+        height: 30px;
+        width: 30px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+      }
+    }
   }
 `;

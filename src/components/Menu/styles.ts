@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 113%;
+  width: 100%;
   height: 60px;
   margin-top: 3px;
   background: #00bfff;
@@ -29,7 +29,7 @@ export const Container = styled.div`
   svg {
     font-size: 29px;
     color: white;
-    margin-right: 60px;
+    margin-right: 190px;
   }
 
   h1 {

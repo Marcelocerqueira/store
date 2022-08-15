@@ -15,25 +15,25 @@ const CardImagem: React.FC<Props> = (props) => {
 
   const [data, setData] = useState([
     {
-      title: "TV",
+      title: "Computador",
       money: 30,
-      url: "https://a-static.mlcdn.com.br/800x560/smart-tv-32-hd-led-tcl-s615-va-60hz-android-wi-fi-e-bluetooth-google-assistente-2-hdmi/magazineluiza/230531900/a74f79c5e2ff63182a417c62f521a25a.jpg",
+      url: "http://heitec.com.br/wp-content/uploads/2016/09/HPp62005UK2._V165305585_-1170x570.jpg",
     },
     {
-      title: "Cama",
+      title: "Livros",
       money: 10,
-      url: "https://a-static.mlcdn.com.br/800x560/smart-tv-32-hd-led-tcl-s615-va-60hz-android-wi-fi-e-bluetooth-google-assistente-2-hdmi/magazineluiza/230531900/a74f79c5e2ff63182a417c62f521a25a.jpg",
+      url: "https://portalvidalivre.com/uploads/content/image/88478/Design_sem_nome__1___1_.jpg",
     },
     {
-      title: "SOM",
+      title: "Computador",
       money: 15,
-      url: "https://www.amazon.com.br/Computador-Desktop-Completo-EasyPC-Standard/dp/B089BYNGPW",
+      url: "http://heitec.com.br/wp-content/uploads/2016/09/HPp62005UK2._V165305585_-1170x570.jpg",
     },
 
     {
-      title: "Mesa",
+      title: "Planta",
       money: 80,
-      url: "https://a-static.mlcdn.com.br/800x560/smart-tv-32-hd-led-tcl-s615-va-60hz-android-wi-fi-e-bluetooth-google-assistente-2-hdmi/magazineluiza/230531900/a74f79c5e2ff63182a417c62f521a25a.jpg",
+      url: "https://st4.depositphotos.com/2714617/23820/i/1600/depositphotos_238204304-stock-photo-woman-vegetable-garden-laptop-computer.jpg",
     },
   ]);
   return (
