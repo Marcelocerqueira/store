@@ -14,8 +14,6 @@ import {
 
 import { useAuth } from "../../hooks/carts";
 
-// const { Sider } = Layout;
-
 const LayoutCompeent: React.FC = () => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [total, setTotal] = useState<any>(0);
@@ -49,8 +47,6 @@ const LayoutCompeent: React.FC = () => {
     <Container>
       <Wrapper>
         <HeaderMenu setIsModalVisible={setIsModalVisible} />
-
-        {/* <Product /> */}
 
         <Content>
           <ModalContainer
@@ -120,11 +116,11 @@ const LayoutCompeent: React.FC = () => {
                 Preço <hr /> de
               </h2>
             </div>
-            <input type="text" value="R$ 0,00" />
+            <input type="text" placeholder="R$ 0,00" />
             <div>
               <h2>Até</h2>
             </div>
-            <input type="text" value="R$ 0,00" />
+            <input type="text" placeholder="R$ 0,00" />
             <div>
               <h1>Ordenar</h1>
               <h4>Preço</h4>
