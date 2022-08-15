@@ -55,47 +55,54 @@ const LayoutCompeent: React.FC = () => {
 
         <Content>
           <ModalContainer
-            title="Basic Modal"
+            title="CARRINHO"
             visible={isModalVisible}
             onOk={handleOk}
             onCancel={handleCancel}
             width={1200}
           >
-            <div className="chekout-title">
-              <h2>imagem</h2>
-              <h2>Nome do produto</h2>
-              <h2>Valor</h2>
-              <h2>Quantidade</h2>
+            <div
+              style={{
+                // border: "1px solid red",
+                display: "flex",
+              }}
+            >
+              <div>
+                <div className="chekout-title">
+                  <h2>imagem</h2>
+                  <h2>Nome do produto</h2>
+                  <h2>Valor</h2>
+                  <h2>Quantidade</h2>
+                </div>
+
+                {countCart.map((item: any) => {
+                  return (
+                    <>
+                      <Checkout key={item.id}>
+                        <div className="checkout-modal">
+                          <div>
+                            <img src={item.url} alt="" />
+                          </div>
+                          <div>{item.title}</div>
+                          <div>{item.money}</div>
+                          <div className="btn">
+                            - <input type="text" />+
+                          </div>
+                        </div>
+                      </Checkout>
+                    </>
+                  );
+                })}
+              </div>
+              <div className="modal-resumo">
+                <div>Resumo</div>
+                <div>R${total}</div>
+                <div>Descontos</div>
+                <div>Frete</div>
+                <div>R${total + 10}</div>
+                <button>Finaliza Compra</button>
+              </div>
             </div>
-            {countCart.map((item: any) => {
-              // setTotal(item.money);
-              // setTotal((old: any) => [...old, item?.money]);
-              return (
-                <>
-                  <Checkout>
-                    <div className="checkout-modal">
-                      <div>
-                        <img src={item.url} alt="" />
-                      </div>
-                      <div>{item.title}</div>
-                      <div>{item.money}</div>
-                      <div className="btn">
-                        {/* <button>+</button> */}
-                        - <input type="text" />+{/* <button>-</button> */}
-                      </div>
-                    </div>
-                  </Checkout>
-                  <div className="modal-resumo">
-                    <div>Resumo</div>
-                    <div>R${total}</div>
-                    <div>Descontos</div>
-                    <div>Frete</div>
-                    <div>R${total + 10}</div>
-                    <button>Finaliza Compra</button>
-                  </div>
-                </>
-              );
-            })}
           </ModalContainer>
 
           <Sider>

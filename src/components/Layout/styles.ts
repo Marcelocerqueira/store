@@ -49,18 +49,21 @@ export const Sider = styled.div`
 export const ModalContainer = styled(Modal)`
   .modal-resumo {
     border: 1px solid #ccc;
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 240px;
+    margin-left: 10px;
     border-radius: 6px;
     background: #ccc;
+    padding: 10px;
 
     button {
       width: 100%;
       background: #00bfff;
       color: white;
       border-radius: 5px;
-      font-size: 15px;
+      font-size: 20px;
       display: flex;
+      margin-top: 49px;
       justify-content: center;
     }
   }
@@ -69,7 +72,7 @@ export const ModalContainer = styled(Modal)`
     display: flex;
     justify-content: space-around;
     gap: 100px;
-    border: 1px solid #000;
+    /* border: 1px solid #000; */
   }
 `;
 
