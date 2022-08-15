@@ -13,7 +13,7 @@ export const Wrapper = styled.div`
 
 export const Content = styled.div`
   display: flex;
-  border: 1px solid red;
+  /* border: 1px solid red; */
 `;
 
 export const Sider = styled.div`
@@ -93,18 +93,13 @@ export const Checkout = styled.div`
     /* border: 1px solid #000; */
 
     .btn {
-      /* width: 30px; */
-      /*  */
       background: white;
       color: #00bfff;
-      /* border-radius: 5px; */
       font-size: 35px;
       gap: 10px;
       align-items: center;
       display: flex;
       justify-content: center;
-      /* border: 1px solid #ccc; */
-      /* border: none; */
 
       input {
         height: 30px;

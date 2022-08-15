@@ -53,7 +53,6 @@ const CardImagem: React.FC<Props> = (props) => {
                   money: item.money,
                   url: item.url,
                 };
-                // setWewObject((old: any) => [...old, object]);
                 setCountCart((old: any) => [...old, object]);
               }}
             >
